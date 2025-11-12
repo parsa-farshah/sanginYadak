@@ -1,0 +1,40 @@
+@import "tailwindcss";
+/* npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css --watch */
+
+@font-face {
+  font-family: "yekan";
+  src: url(../fonts/BYekan+.ttf);
+}
+@font-face {
+  font-family: "yekanB";
+  src: url(../fonts/BYekan+\ Bold.ttf);
+}
+@font-face {
+  font-family: "lalezar";
+  src: url(../fonts/Lalezar-Regular.ttf);
+}
+
+@layer base {
+  :root {
+    --color-orange: #ef8d2a;
+  }
+}
+
+@layer utilities {
+  .text-orangeFv {
+    @apply text-[#ef8d2a];
+  }
+  .text-hover-orangeFv {
+    @apply hover:text-[#ef8d2a];
+  }
+  .bg-orangeFv {
+    background-color: #ef8d2a;
+  }
+  .font-yekan {
+    font-family: "yekan";
+  }
+}
+
+body {
+  font-family: "lalezar";
+}
