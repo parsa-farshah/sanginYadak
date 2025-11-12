@@ -178,14 +178,42 @@
   .table {
     display: table;
   }
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
+  .size-7 {
+    width: calc(var(--spacing) * 7);
+    height: calc(var(--spacing) * 7);
+  }
+  .size-8 {
+    width: calc(var(--spacing) * 8);
+    height: calc(var(--spacing) * 8);
+  }
+  .size-9 {
+    width: calc(var(--spacing) * 9);
+    height: calc(var(--spacing) * 9);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
   .h-24 {
     height: calc(var(--spacing) * 24);
+  }
+  .h-28 {
+    height: calc(var(--spacing) * 28);
   }
   .h-\[60\%\] {
     height: 60%;
@@ -193,11 +221,14 @@
   .h-\[60px\] {
     height: 60px;
   }
-  .h-\[90px\] {
-    height: 90px;
+  .h-\[90\%\] {
+    height: 90%;
   }
   .h-full {
     height: 100%;
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
@@ -205,11 +236,29 @@
   .w-7 {
     width: calc(var(--spacing) * 7);
   }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+  .w-26 {
+    width: calc(var(--spacing) * 26);
+  }
   .w-28 {
     width: calc(var(--spacing) * 28);
   }
   .w-\[60\%\] {
     width: 60%;
+  }
+  .w-\[zz\] {
+    width: zz;
   }
   .w-full {
     width: 100%;
@@ -257,21 +306,17 @@
   .border-black {
     border-color: var(--color-black);
   }
+  .border-white {
+    border-color: var(--color-white);
+  }
   .bg-\[\#141414\] {
     background-color: #141414;
   }
-  .bg-\[\#363636\] {
-    background-color: #363636;
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
   }
   .px-9 {
     padding-inline: calc(var(--spacing) * 9);
-  }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
-  .font-black {
-    --tw-font-weight: var(--font-weight-black);
-    font-weight: var(--font-weight-black);
   }
   .text-\[\#787878\] {
     color: #787878;
@@ -315,16 +360,17 @@
       padding-inline: calc(var(--spacing) * 4);
     }
   }
-  .\*\:text-2xl {
-    :is(& > *) {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-  }
   .\*\:text-xl {
     :is(& > *) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .group-hover\:stroke-black {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        stroke: var(--color-black);
+      }
     }
   }
   .hover\:bg-\[\#ef8d2a\] {
@@ -334,14 +380,61 @@
       }
     }
   }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
     }
   }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
+  .md\:h-28 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 28);
+    }
+  }
+  .md\:w-2 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:w-20 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:w-24 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 24);
+    }
+  }
+  .md\:w-28 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 28);
+    }
+  }
   .md\:w-32 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 32);
+    }
+  }
+  .md\:justify-start {
+    @media (width >= 48rem) {
+      justify-content: flex-start;
+    }
+  }
+  .md\:px-9 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 9);
     }
   }
 }
@@ -388,10 +481,6 @@ body {
   inherits: false;
   initial-value: solid;
 }
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -405,7 +494,6 @@ body {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
-      --tw-font-weight: initial;
       --tw-outline-style: solid;
       --tw-duration: initial;
     }

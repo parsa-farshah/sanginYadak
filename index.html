@@ -51,14 +51,16 @@
         </div>
       </div>
       <!------------------------------------- navbar ----------------------------->
-      <nav class="w-full flex items-center h-24 bg-[#141414] px-9 gap-16">
+      <nav
+        class="w-full flex items-center justify-between md:justify-start h-24 md:h-28 bg-[#141414] px-4 md:px-9 gap-16"
+      >
         <!---------------------- logo ---------------->
         <figure>
-          <img class="w-28 md:w-32" src="src/icons/logo.png" alt="" />
+          <img class="w-20 md:w-28" src="src/icons/logo.png" alt="" />
         </figure>
         <!-- links -->
         <ul
-          class="flex text-white *:px-4 *:text-xl *:cursor-pointer *:flex *:justify-center *:items-center"
+          class="text-white *:px-4 *:text-xl *:cursor-pointer *:flex *:justify-center *:items-center hidden md:flex"
         >
           <li class="text-hover-orangeFv duration-300"><a href="">خانه</a></li>
           <li class="text-hover-orangeFv duration-300">
@@ -69,6 +71,25 @@
           </li>
           <li class="text-hover-orangeFv duration-300"><a href="">تماس</a></li>
         </ul>
+        <!-- menu -->
+        <div
+          class="w-12 h-12 border border-white flex justify-center items-center cursor-pointer hover:bg-white duration-300 group"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="white"
+            class="size-8 group-hover:stroke-black duration-300"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
       </nav>
     </main>
   </body>
