@@ -297,10 +297,10 @@
             </div>
             <!-- loader -->
             <div
-              class="w-full md:w-[48%] h-fit flex flex-wrap bg-[#f7f7f7] px-8 hover:shadow-lg duration-300 py-6 hover:scale-105"
+              class="w-full md:w-[48%] flex flex-wrap bg-[#f7f7f7] px-8 hover:shadow-lg duration-300 py-6 hover:scale-105"
             >
               <!-- image and text -->
-              <div class="flex flex-wrap gap-y-6 items-center mb-5">
+              <div class="flex flex-wrap gap-y-6 items-center mb-5 pt-6">
                 <figure class="w-full">
                   <img class="w-[50%]" src="src/images/loader.png" alt="" />
                 </figure>
@@ -318,7 +318,7 @@
               <!-- image and text -->
               <div class="flex flex-wrap gap-y-6 items-center mb-5">
                 <figure class="w-full">
-                  <img class="w-[50%]" src="src/images/grader.png" alt="" />
+                  <img class="w-[50%]" src="src/images/grader.webp" alt="" />
                 </figure>
                 <h4 class="text-xl">گریدر</h4>
               </div>
@@ -332,12 +332,12 @@
       </section>
 
       <!-- about us -->
-      <section class="w-full h-[400vh] bg-[#f8f8f8] mt-[100px] relative">
+      <section class="w-full h-fit bg-[#f8f8f8] my-[100px] relative">
         <div
           class="w-full h-full bg-cover bg-[url(../images/bgAboutUs.webp)] absolute top-0 left-0 opacity-35 bg-fixed z-10"
         ></div>
         <!--------------------------------- about us ------------------------>
-        <div class="w-full px-4 md:px-9 pt-[96px]">
+        <div class="w-full px-4 md:px-9">
           <div
             class="2xl:container mx-auto lg:flex md:justify-between md:items-center"
           >
@@ -405,17 +405,261 @@
             </div>
           </div>
         </div>
+      </section>
+      <!-- end about us -->
 
-        <!-- who are we -->
-        <div
-          class="w-full h-[700px] border 2xl:container mx-auto relative z-20"
-        >
-          <div class="w-full h-full bg-white">
-            <img src="src/images/bucketTeeth.webp" alt="" />
+      <!-------------------------------- buy ---------------------------->
+      <div class="w-full 2xl:container mx-auto mt-10 px-4 md:px-9">
+        <div class="w-full h-full flex flex-col items-center gap-y-9">
+          <!-- Products -->
+          <div class="flex gap-5 items-center">
+            <div class="w-5 h-0.5 bg-black"></div>
+            <span class="text-xl text-[#fbfbfb] text-orangeFv">محصولات</span>
+          </div>
+          <!-- h2 -->
+          <h2 class="text-[#141414] text-[44px] lg:text-[64px] text-center">
+            گزینه‌های انعطاف‌پذیر، بالاترین کیفیت
+          </h2>
+          <!-- p -->
+          <p class="text-[#787878] w-full sm:w-[80%] lg:w-full text-center">
+            تولید، واردات و پخش مستقیم قطعات راه‌سازی با بهترین قیمت. ارائه‌ی
+            لوازم زیربندی، موتوری، گیربکسی و برقی انواع ماشین‌آلات سنگین.
+            <br />
+            ضمانت اصالت، ارسال سریع و پشتیبانی تخصصی در سراسر کشور.
+          </p>
+          <!-- products -->
+          <div class="w-full flex flex-wrap gap-y-6 justify-between">
+            <!---------------- 1 ----------------------->
+            <div class="w-full md:w-[32%] bg-[#f3f3f3] px-4 pb-7">
+              <img
+                class="pb-5 border-b border-b-[#ef8d2a]"
+                src="src/images/Bulldozer.png"
+                alt=""
+              />
+              <!-- information -->
+              <div class="flex flex-col gap-y-7">
+                <!-- stars -->
+                <div class="mt-5 flex gap-1">
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                </div>
+                <!-- name -->
+                <h4 class="text-2xl text-[#141414]">چرخ لودر</h4>
+                <!-- information -->
+                <p class="text-[#787878]">
+                  لوازم یدکی لودر L120E ولوو، لوازم یدکی لودرL120F ولوو، لوازم
+                  یدکی لودر L90E ولوو ، لوازم یدکی لودر L90F ولوو، قطعات لودر
+                  HL150 ولوو، قطعات لودر HL200 ولوو، قطعات لودر L120 ولو
+                </p>
+                <!-- price -->
+                <h5 class="text-2xl text-[#ef8d2a]">200 میلیون تومان</h5>
+                <!-- more products -->
+                <a
+                  class="bg-[#141414] py-3.5 px-8 text-[#fbfbfb] flex justify-center items-center"
+                  href=""
+                  >اطلاعات بیشتر</a
+                >
+              </div>
+              <!-- end information -->
+            </div>
+            <!-- end 1 -->
+
+            <!---------------- 2 ----------------------->
+            <div class="w-full md:w-[32%] bg-[#f3f3f3] px-4 pb-7">
+              <img
+                class="pb-5 border-b border-b-[#ef8d2a]"
+                src="src/images/Bulldozer.png"
+                alt=""
+              />
+              <!-- information -->
+              <div class="flex flex-col gap-y-7">
+                <!-- stars -->
+                <div class="mt-5 flex gap-1">
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                </div>
+                <!-- name -->
+                <h4 class="text-2xl text-[#141414]">چرخ لودر</h4>
+                <!-- information -->
+                <p class="text-[#787878]">
+                  لوازم یدکی لودر L120E ولوو، لوازم یدکی لودرL120F ولوو، لوازم
+                  یدکی لودر L90E ولوو ، لوازم یدکی لودر L90F ولوو، قطعات لودر
+                  HL150 ولوو، قطعات لودر HL200 ولوو، قطعات لودر L120 ولو
+                </p>
+                <!-- price -->
+                <h5 class="text-2xl text-[#ef8d2a]">200 میلیون تومان</h5>
+                <!-- more products -->
+                <a
+                  class="bg-[#141414] py-3.5 px-8 text-[#fbfbfb] flex justify-center items-center"
+                  href=""
+                  >اطلاعات بیشتر</a
+                >
+              </div>
+              <!-- end information -->
+            </div>
+            <!-- end 2 -->
+
+            <!---------------- 3 ----------------------->
+            <div class="w-full md:w-[32%] bg-[#f3f3f3] px-4 pb-7">
+              <img
+                class="pb-5 border-b border-b-[#ef8d2a]"
+                src="src/images/Bulldozer.png"
+                alt=""
+              />
+              <!-- information -->
+              <div class="flex flex-col gap-y-7">
+                <!-- stars -->
+                <div class="mt-5 flex gap-1">
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                </div>
+                <!-- name -->
+                <h4 class="text-2xl text-[#141414]">چرخ لودر</h4>
+                <!-- information -->
+                <p class="text-[#787878]">
+                  لوازم یدکی لودر L120E ولوو، لوازم یدکی لودرL120F ولوو، لوازم
+                  یدکی لودر L90E ولوو ، لوازم یدکی لودر L90F ولوو، قطعات لودر
+                  HL150 ولوو، قطعات لودر HL200 ولوو، قطعات لودر L120 ولو
+                </p>
+                <!-- price -->
+                <h5 class="text-2xl text-[#ef8d2a]">200 میلیون تومان</h5>
+                <!-- more products -->
+                <a
+                  class="bg-[#141414] py-3.5 px-8 text-[#fbfbfb] flex justify-center items-center"
+                  href=""
+                  >اطلاعات بیشتر</a
+                >
+              </div>
+              <!-- end information -->
+            </div>
+            <!-- end 3 -->
+
+            <!---------------- 4 ----------------------->
+            <div class="w-full md:w-[32%] bg-[#f3f3f3] px-4 pb-7">
+              <img
+                class="pb-5 border-b border-b-[#ef8d2a]"
+                src="src/images/Bulldozer.png"
+                alt=""
+              />
+              <!-- information -->
+              <div class="flex flex-col gap-y-7">
+                <!-- stars -->
+                <div class="mt-5 flex gap-1">
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                </div>
+                <!-- name -->
+                <h4 class="text-2xl text-[#141414]">چرخ لودر</h4>
+                <!-- information -->
+                <p class="text-[#787878]">
+                  لوازم یدکی لودر L120E ولوو، لوازم یدکی لودرL120F ولوو، لوازم
+                  یدکی لودر L90E ولوو ، لوازم یدکی لودر L90F ولوو، قطعات لودر
+                  HL150 ولوو، قطعات لودر HL200 ولوو، قطعات لودر L120 ولو
+                </p>
+                <!-- price -->
+                <h5 class="text-2xl text-[#ef8d2a]">200 میلیون تومان</h5>
+                <!-- more products -->
+                <a
+                  class="bg-[#141414] py-3.5 px-8 text-[#fbfbfb] flex justify-center items-center"
+                  href=""
+                  >اطلاعات بیشتر</a
+                >
+              </div>
+              <!-- end information -->
+            </div>
+            <!-- end 4 -->
+
+            <!---------------- 5 ----------------------->
+            <div class="w-full md:w-[32%] bg-[#f3f3f3] px-4 pb-7">
+              <img
+                class="pb-5 border-b border-b-[#ef8d2a]"
+                src="src/images/Bulldozer.png"
+                alt=""
+              />
+              <!-- information -->
+              <div class="flex flex-col gap-y-7">
+                <!-- stars -->
+                <div class="mt-5 flex gap-1">
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                </div>
+                <!-- name -->
+                <h4 class="text-2xl text-[#141414]">چرخ لودر</h4>
+                <!-- information -->
+                <p class="text-[#787878]">
+                  لوازم یدکی لودر L120E ولوو، لوازم یدکی لودرL120F ولوو، لوازم
+                  یدکی لودر L90E ولوو ، لوازم یدکی لودر L90F ولوو، قطعات لودر
+                  HL150 ولوو، قطعات لودر HL200 ولوو، قطعات لودر L120 ولو
+                </p>
+                <!-- price -->
+                <h5 class="text-2xl text-[#ef8d2a]">200 میلیون تومان</h5>
+                <!-- more products -->
+                <a
+                  class="bg-[#141414] py-3.5 px-8 text-[#fbfbfb] flex justify-center items-center"
+                  href=""
+                  >اطلاعات بیشتر</a
+                >
+              </div>
+              <!-- end information -->
+            </div>
+            <!-- end 5 -->
+
+            <!---------------- 6 ----------------------->
+            <div class="w-full md:w-[32%] bg-[#f3f3f3] px-4 pb-7">
+              <img
+                class="pb-5 border-b border-b-[#ef8d2a]"
+                src="src/images/Bulldozer.png"
+                alt=""
+              />
+              <!-- information -->
+              <div class="flex flex-col gap-y-7">
+                <!-- stars -->
+                <div class="mt-5 flex gap-1">
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                  <img class="w-4 h-4" src="src/icons/stars.png" alt="" />
+                </div>
+                <!-- name -->
+                <h4 class="text-2xl text-[#141414]">چرخ لودر</h4>
+                <!-- information -->
+                <p class="text-[#787878]">
+                  لوازم یدکی لودر L120E ولوو، لوازم یدکی لودرL120F ولوو، لوازم
+                  یدکی لودر L90E ولوو ، لوازم یدکی لودر L90F ولوو، قطعات لودر
+                  HL150 ولوو، قطعات لودر HL200 ولوو، قطعات لودر L120 ولو
+                </p>
+                <!-- price -->
+                <h5 class="text-2xl text-[#ef8d2a]">200 میلیون تومان</h5>
+                <!-- more products -->
+                <a
+                  class="bg-[#141414] py-3.5 px-8 text-[#fbfbfb] flex justify-center items-center"
+                  href=""
+                  >اطلاعات بیشتر</a
+                >
+              </div>
+              <!-- end information -->
+            </div>
+            <!-- end 6 -->
           </div>
         </div>
-      </section>
-      <!-- about us -->
+      </div>
+      <!-------------------------------- end buy ------------------->
     </main>
   </body>
   <script src="src/js/index.js"></script>
