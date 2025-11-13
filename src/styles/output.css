@@ -194,14 +194,35 @@
   .right-full {
     right: 100%;
   }
+  .-bottom-4 {
+    bottom: calc(var(--spacing) * -4);
+  }
+  .-bottom-5 {
+    bottom: calc(var(--spacing) * -5);
+  }
   .-bottom-6 {
     bottom: calc(var(--spacing) * -6);
+  }
+  .-bottom-7 {
+    bottom: calc(var(--spacing) * -7);
   }
   .-bottom-12 {
     bottom: calc(var(--spacing) * -12);
   }
   .-bottom-16 {
     bottom: calc(var(--spacing) * -16);
+  }
+  .-bottom-28 {
+    bottom: calc(var(--spacing) * -28);
+  }
+  .-bottom-48 {
+    bottom: calc(var(--spacing) * -48);
+  }
+  .-bottom-56 {
+    bottom: calc(var(--spacing) * -56);
+  }
+  .-bottom-72 {
+    bottom: calc(var(--spacing) * -72);
   }
   .bottom-6 {
     bottom: calc(var(--spacing) * 6);
@@ -336,6 +357,12 @@
   }
   .w-\[80\%\] {
     width: 80%;
+  }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[100\%\] {
+    width: 100%;
   }
   .w-\[600px\] {
     width: 600px;
@@ -612,6 +639,21 @@
       }
     }
   }
+  .md\:right-0 {
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:-bottom-16 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * -16);
+    }
+  }
+  .md\:bottom-28 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 28);
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -627,9 +669,19 @@
       height: calc(var(--spacing) * 28);
     }
   }
+  .md\:h-\[500px\] {
+    @media (width >= 48rem) {
+      height: 500px;
+    }
+  }
   .md\:w-28 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 28);
+    }
+  }
+  .md\:w-\[80\%\] {
+    @media (width >= 48rem) {
+      width: 80%;
     }
   }
   .md\:justify-start {
@@ -640,6 +692,26 @@
   .md\:px-9 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 9);
+    }
+  }
+  .lg\:right-0 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:-bottom-16 {
+    @media (width >= 64rem) {
+      bottom: calc(var(--spacing) * -16);
+    }
+  }
+  .lg\:h-\[500px\] {
+    @media (width >= 64rem) {
+      height: 500px;
+    }
+  }
+  .lg\:w-\[80\%\] {
+    @media (width >= 64rem) {
+      width: 80%;
     }
   }
   .\32 xl\:container {
