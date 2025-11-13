@@ -167,8 +167,14 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .fixed {
     position: fixed;
+  }
+  .relative {
+    position: relative;
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
@@ -187,6 +193,18 @@
   }
   .right-full {
     right: 100%;
+  }
+  .-bottom-6 {
+    bottom: calc(var(--spacing) * -6);
+  }
+  .-bottom-12 {
+    bottom: calc(var(--spacing) * -12);
+  }
+  .-bottom-16 {
+    bottom: calc(var(--spacing) * -16);
+  }
+  .bottom-6 {
+    bottom: calc(var(--spacing) * 6);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -220,6 +238,9 @@
   }
   .left-full {
     left: 100%;
+  }
+  .z-50 {
+    z-index: 50;
   }
   .mx-auto {
     margin-inline: auto;
@@ -271,6 +292,24 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[80vh\] {
+    height: 80vh;
+  }
+  .h-\[90vh\] {
+    height: 90vh;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-\[600px\] {
+    height: 600px;
+  }
   .h-dvh {
     height: 100dvh;
   }
@@ -295,11 +334,56 @@
   .w-\[70\%\] {
     width: 70%;
   }
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[600px\] {
+    width: 600px;
+  }
   .w-full {
     width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .-rotate-2 {
+    rotate: calc(2deg * -1);
+  }
+  .-rotate-6 {
+    rotate: calc(6deg * -1);
+  }
+  .-rotate-12 {
+    rotate: calc(12deg * -1);
+  }
+  .-rotate-45 {
+    rotate: calc(45deg * -1);
+  }
+  .-rotate-\[0deg\] {
+    rotate: calc(0deg * -1);
+  }
+  .-rotate-\[20deg\] {
+    rotate: calc(20deg * -1);
+  }
+  .-rotate-\[30deg\] {
+    rotate: calc(30deg * -1);
+  }
+  .-rotate-\[40deg\] {
+    rotate: calc(40deg * -1);
+  }
+  .rotate-6 {
+    rotate: 6deg;
+  }
+  .rotate-12 {
+    rotate: 12deg;
+  }
+  .rotate-20 {
+    rotate: 20deg;
+  }
+  .rotate-45 {
+    rotate: 45deg;
+  }
+  .rotate-\[40deg\] {
+    rotate: 40deg;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -374,6 +458,15 @@
   .bg-\[\#ffffff18\] {
     background-color: #ffffff18;
   }
+  .bg-cover {
+    background-size: cover;
+  }
+  .object-contain {
+    object-fit: contain;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -388,6 +481,12 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-25 {
+    opacity: 25%;
+  }
+  .opacity-35 {
+    opacity: 35%;
   }
   .outline {
     outline-style: var(--tw-outline-style);
