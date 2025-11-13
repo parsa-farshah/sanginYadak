@@ -510,6 +510,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
@@ -733,6 +736,11 @@
       }
     }
   }
+  .sm\:w-\[80\%\] {
+    @media (width >= 40rem) {
+      width: 80%;
+    }
+  }
   .md\:right-0 {
     @media (width >= 48rem) {
       right: calc(var(--spacing) * 0);
@@ -773,6 +781,11 @@
       width: calc(var(--spacing) * 28);
     }
   }
+  .md\:w-\[60\%\] {
+    @media (width >= 48rem) {
+      width: 60%;
+    }
+  }
   .md\:w-\[80\%\] {
     @media (width >= 48rem) {
       width: 80%;
@@ -801,6 +814,16 @@
   .lg\:-bottom-16 {
     @media (width >= 64rem) {
       bottom: calc(var(--spacing) * -16);
+    }
+  }
+  .lg\:-left-0 {
+    @media (width >= 64rem) {
+      left: calc(var(--spacing) * -0);
+    }
+  }
+  .lg\:-left-48 {
+    @media (width >= 64rem) {
+      left: calc(var(--spacing) * -48);
     }
   }
   .lg\:left-0 {
