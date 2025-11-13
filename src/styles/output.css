@@ -176,6 +176,51 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .right-\[120\%\] {
+    right: 120%;
+  }
+  .right-\[120\] {
+    right: 120;
+  }
+  .right-\[130\%\] {
+    right: 130%;
+  }
+  .right-full {
+    right: 100%;
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .left-100 {
+    left: calc(var(--spacing) * 100);
+  }
+  .left-\[0\%\] {
+    left: 0%;
+  }
+  .left-\[0\] {
+    left: 0;
+  }
+  .left-\[30\%\] {
+    left: 30%;
+  }
+  .left-\[40\%\] {
+    left: 40%;
+  }
+  .left-\[60\%\] {
+    left: 60%;
+  }
+  .left-\[80\%\] {
+    left: 80%;
+  }
+  .left-\[130\%\] {
+    left: 130%;
+  }
+  .left-\[150\%\] {
+    left: 150%;
+  }
+  .left-full {
+    left: 100%;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -351,6 +396,14 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
+  }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+  }
+  .duration-700 {
+    --tw-duration: 700ms;
+    transition-duration: 700ms;
   }
   .\*\:flex {
     :is(& > *) {
