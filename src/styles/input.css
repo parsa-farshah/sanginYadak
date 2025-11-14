@@ -24,6 +24,9 @@
   .text-orangeFv {
     @apply text-[#ef8d2a];
   }
+  .border-orangeFv {
+    @apply border border-[#ef8d2a];
+  }
   .text-hover-orangeFv {
     @apply hover:text-[#ef8d2a];
   }
