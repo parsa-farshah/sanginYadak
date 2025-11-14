@@ -865,6 +865,11 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
+  .sm\:text-\[44px\] {
+    @media (width >= 40rem) {
+      font-size: 44px;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
