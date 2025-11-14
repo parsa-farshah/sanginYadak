@@ -35,6 +35,7 @@ let $accordionSpan = document.querySelectorAll(
 let $accordionImg = document.querySelectorAll("#accordionWrapper>div>div>img");
 
 function clickAccor(s) {
+  // reseting
   $accordionP.forEach((val) => {
     val.classList.remove("visible");
     val.classList.add("invisible");
@@ -54,6 +55,7 @@ function clickAccor(s) {
   $accordionImg.forEach((val) => {
     val.setAttribute("src", "src/icons/plus.png");
   });
+  // end reseting
   let $divParent = s.parentElement.children[0];
   let $divSpan = s.parentElement.children[0].children[0];
   let $icon = s.parentElement.children[0].children[1];
