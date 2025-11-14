@@ -858,7 +858,7 @@
       </section>
       <!---------------------------------- end question ---------------------------->
     </main>
-    <footer class="mt-10 w-full h-[100vh] relative">
+    <footer class="mt-10 w-full relative">
       <!------------------------------------ background -------------------->
       <div
         class="w-full h-full bg-bottom bg-cover absolute top-0 left-0 bg-[url(../images/footerBg.webp)]"
@@ -873,14 +873,16 @@
           class="w-full h-fit flex flex-col lg:flex-row gap-0 lg:items-center lg:gap-20 pb-7 border-b border-b-[#d3d3d3bd]"
         >
           <img class="w-28" src="src/icons/logo.png" alt="" />
-          <h2 class="text-white text-[54px] sm:w-[70%] lg:w-full">
+          <h2 class="text-white text-[54px] sm:w-[50%] lg:w-full">
             بورس قطعات ماشین آلات راهسازی و معدنی
           </h2>
         </div>
         <!-- end logo and text -->
 
         <!------------------------------------- row 2 ---------------->
-        <div class="py-7 border-b border-b-[#d3d3d3bd]">
+        <div
+          class="py-7 border-b border-b-[#d3d3d3bd] flex flex-col lg:flex-row gap-y-10 gap-10"
+        >
           <!-- about us -->
           <div class="w-full lg:w-[25%] flex flex-col gap-6">
             <h2 class="text-orangeFv text-2xl">درباره ما</h2>
@@ -922,8 +924,106 @@
               </div>
             </div>
           </div>
+          <!-- equipment -->
+          <div class="w-full lg:w-[25%] flex flex-col gap-6">
+            <h2 class="text-orangeFv text-2xl">تجهیزات</h2>
+            <ul class="flex flex-col gap-y-1">
+              <!-- loader -->
+              <li>
+                <a href="">
+                  <div class="flex gap-5 items-center">
+                    <div class="w-2.5 h-0.5 bg-orangeFv"></div>
+                    <span class="text-[#fbfbfb] text-hover-orangeFv">لودر</span>
+                  </div>
+                </a>
+              </li>
+              <!-- grader -->
+              <li>
+                <a href="">
+                  <div class="flex gap-5 items-center">
+                    <div class="w-2.5 h-0.5 bg-orangeFv"></div>
+                    <span class="text-[#fbfbfb] text-hover-orangeFv"
+                      >گریدر</span
+                    >
+                  </div>
+                </a>
+              </li>
+              <!-- Excavator -->
+              <li>
+                <a href="">
+                  <div class="flex gap-5 items-center">
+                    <div class="w-2.5 h-0.5 bg-orangeFv"></div>
+                    <span class="text-[#fbfbfb] text-hover-orangeFv"
+                      >بیل مکانیکی</span
+                    >
+                  </div>
+                </a>
+              </li>
+              <!-- Bulldozer -->
+              <li>
+                <a href="">
+                  <div class="flex gap-5 items-center">
+                    <div class="w-2.5 h-0.5 bg-orangeFv"></div>
+                    <span class="text-[#fbfbfb] text-hover-orangeFv"
+                      >بلدوزر</span
+                    >
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- end equipment -->
+
+          <!-- address -->
+          <div class="w-full lg:w-[25%] flex flex-col gap-6">
+            <h2 class="text-orangeFv text-2xl">آدرس ما</h2>
+            <ul class="flex flex-col gap-y-3">
+              <!-- address -->
+              <li>
+                <a href="">
+                  <div class="flex gap-5 items-center">
+                    <img class="w-4 h-4" src="src/icons/location.png" alt="" />
+                    <span class="text-[#fbfbfb] text-hover-orangeFv"
+                      >اشرفی اصفهانی بالاتر از پونک بلوار کمالی پلاک 19</span
+                    >
+                  </div>
+                </a>
+              </li>
+              <!-- phone -->
+              <li>
+                <a href="">
+                  <div class="flex gap-5 items-center">
+                    <img class="w-4 h-4" src="src/icons/phone.png" alt="" />
+                    <span dir="ltr" class="text-[#fbfbfb] text-hover-orangeFv"
+                      >+937 244 04 69</span
+                    >
+                  </div>
+                </a>
+              </li>
+              <!-- email -->
+              <li>
+                <a href="">
+                  <div class="flex gap-5 items-center">
+                    <img class="w-4 h-4" src="src/icons/email.png" alt="" />
+                    <span dir="ltr" class="text-[#fbfbfb] text-hover-orangeFv"
+                      >parsa@gmail.com</span
+                    >
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- end address -->
         </div>
         <!------------------------------------ end row 2 ------------>
+
+        <!----------------------------------- copy right ---------------------->
+        <div class="py-7">
+          <a class="text-white" href=""
+            >Equip, 2024 © All Rights Reserved parsa dehghan</a
+          >
+        </div>
+        <!----------------------------------- end copy right ------------------>
       </div>
     </footer>
   </body>
