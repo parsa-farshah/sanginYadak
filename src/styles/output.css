@@ -656,6 +656,9 @@
   .text-\[\#fbfbfb\] {
     color: #fbfbfb;
   }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-white {
     color: var(--color-white);
   }

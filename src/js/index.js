@@ -28,6 +28,11 @@ $closeMenuBtn.addEventListener("click", () => {
 
 let $accordionWrapper = document.querySelector("#accordionWrapper");
 let $accordionP = document.querySelectorAll("#accordionWrapper>div>p");
+let $accordionDiv = document.querySelectorAll("#accordionWrapper>div>div");
+let $accordionSpan = document.querySelectorAll(
+  "#accordionWrapper>div>div>span"
+);
+let $accordionImg = document.querySelectorAll("#accordionWrapper>div>div>img");
 
 function clickAccor(s) {
   $accordionP.forEach((val) => {
@@ -38,7 +43,25 @@ function clickAccor(s) {
     val.classList.remove("py-5");
     val.classList.add("h-0");
   });
+  $accordionDiv.forEach((val) => {
+    val.classList.remove("bg-black");
+    val.classList.add("border-orangeFv");
+  });
+  $accordionSpan.forEach((val) => {
+    val.classList.remove("text-white");
+    val.classList.add("text-black");
+  });
+  $accordionImg.forEach((val) => {
+    val.setAttribute("src", "src/icons/plus.png");
+  });
+  let $divParent = s.parentElement.children[0];
+  let $divSpan = s.parentElement.children[0].children[0];
+  let $icon = s.parentElement.children[0].children[1];
   let $p = s.parentElement.children[1];
+  $divParent.classList.add("bg-black");
+  $divParent.classList.remove("border-orangeFv");
+  $icon.setAttribute("src", "src/icons/minus.png");
+  $divSpan.classList.add("text-white");
   $p.classList.remove("h-0");
   $p.classList.remove("invisible");
   $p.classList.add("visible");
