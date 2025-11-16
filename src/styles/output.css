@@ -357,6 +357,9 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[70px\] {
+    height: 70px;
+  }
   .h-\[90\%\] {
     height: 90%;
   }
@@ -393,6 +396,9 @@
   .h-\[500px\] {
     height: 500px;
   }
+  .h-\[700px\] {
+    height: 700px;
+  }
   .h-dvh {
     height: 100dvh;
   }
@@ -423,14 +429,26 @@
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
+  .w-25 {
+    width: calc(var(--spacing) * 25);
+  }
   .w-28 {
     width: calc(var(--spacing) * 28);
   }
   .w-44 {
     width: calc(var(--spacing) * 44);
   }
+  .w-\[\%\] {
+    width: %;
+  }
+  .w-\[0\%\] {
+    width: 0%;
+  }
   .w-\[25\%\] {
     width: 25%;
+  }
+  .w-\[25\] {
+    width: 25;
   }
   .w-\[40\%\] {
     width: 40%;
@@ -447,14 +465,35 @@
   .w-\[70\%\] {
     width: 70%;
   }
+  .w-\[75\%\] {
+    width: 75%;
+  }
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[80\] {
+    width: 80;
+  }
+  .w-\[85\%\] {
+    width: 85%;
+  }
   .w-\[90\%\] {
     width: 90%;
   }
   .w-\[90\] {
     width: 90;
   }
+  .w-\[95\%\] {
+    width: 95%;
+  }
   .w-\[100\%\] {
     width: 100%;
+  }
+  .w-\[180px\] {
+    width: 180px;
+  }
+  .w-fit {
+    width: fit-content;
   }
   .w-full {
     width: 100%;
@@ -996,9 +1035,19 @@
       width: 28%;
     }
   }
+  .md\:w-\[30\%\] {
+    @media (width >= 48rem) {
+      width: 30%;
+    }
+  }
   .md\:w-\[32\%\] {
     @media (width >= 48rem) {
       width: 32%;
+    }
+  }
+  .md\:w-\[40\%\] {
+    @media (width >= 48rem) {
+      width: 40%;
     }
   }
   .md\:w-\[50\%\] {
