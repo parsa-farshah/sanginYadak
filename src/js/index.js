@@ -71,3 +71,44 @@ function clickAccor(s) {
   $p.classList.add("px-4");
   $p.classList.add("py-5");
 }
+
+// swiper
+//  Initialize Swiper
+// Thumbnail slider
+var swiperThumbs = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+// Main slider with thumbnails
+var swiperMain = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiperThumbs,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+// Another standalone slider (if needed)
+var swiper3 = new Swiper(".mySwiper3", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

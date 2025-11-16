@@ -6,6 +6,10 @@
     <title>سنگین یدک</title>
     <link rel="stylesheet" href="../styles/output.css" />
     <link rel="shortcut icon" href="../icons/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <main>
@@ -18,14 +22,14 @@
           <div class="flex h-full items-center gap-7">
             <!-- address -->
             <div class="flex items-center gap-3">
-              <img class="w-5 h-5" src="src/icons/location.png" alt="" />
+              <img class="w-5 h-5" src="../icons/location.png" alt="" />
               <p class="text-[#787878]">
                 اشرفی اصفهانی بالاتر از پونک بلوار کمالی پلاک 19
               </p>
             </div>
             <!-- phone -->
             <div class="flex items-center gap-3">
-              <img class="w-5 h-5" src="src/icons/phone.png" alt="" />
+              <img class="w-5 h-5" src="../icons/phone.png" alt="" />
               <p dir="ltr" class="text-[#787878]">+937 244 04 69</p>
             </div>
           </div>
@@ -37,7 +41,7 @@
             >
               <img
                 class="w-[60%] h-[60%]"
-                src="src/icons/instagram.png"
+                src="../icons/instagram.png"
                 alt=""
               />
             </div>
@@ -45,21 +49,13 @@
             <div
               class="w-7 h-7 bg-[#141414] rounded-sm flex justify-center items-center hover:bg-[#ef8d2a] duration-300 cursor-pointer"
             >
-              <img
-                class="w-[60%] h-[60%]"
-                src="src/icons/whatsapp.png"
-                alt=""
-              />
+              <img class="w-[60%] h-[60%]" src="../icons/whatsapp.png" alt="" />
             </div>
             <!-- facebook -->
             <div
               class="w-7 h-7 bg-[#141414] rounded-sm flex justify-center items-center hover:bg-[#ef8d2a] duration-300 cursor-pointer"
             >
-              <img
-                class="w-[60%] h-[60%]"
-                src="src/icons/facebook.png"
-                alt=""
-              />
+              <img class="w-[60%] h-[60%]" src="../icons/facebook.png" alt="" />
             </div>
           </div>
         </div>
@@ -73,7 +69,7 @@
         >
           <!---------------------- logo ---------------->
           <figure>
-            <img class="w-20 md:w-28" src="src/icons/logo.png" alt="" />
+            <img class="w-20 md:w-28" src="../icons/logo.png" alt="" />
           </figure>
           <!-- links -->
           <ul
@@ -114,6 +110,7 @@
           </div>
         </div>
       </nav>
+
       <!--------------- navbar mobile -------------->
       <section
         id="navMobBg"
@@ -161,11 +158,140 @@
       </div>
       <!--------------- end navbar mobile -------------->
 
+      <!-- ------------------------------------ slider ------------------------ -->
+      <div class="w-full h-fit relative">
+        <!-- container -->
+        <div class="2xl:container mx-auto px-4 md:px-9">
+          <!-- Swiper -->
 
-
-
-
-
+          <div
+            style="
+              --swiper-navigation-color: #000000;
+              --swiper-pagination-color: #000000;
+            "
+            class="swiper mySwiper2"
+          >
+            <div class="swiper-wrapper mb-9">
+              <!-- 1 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center py-10"
+              >
+                <img
+                  class="bg-white w-[50%] h-[500px] mx-auto"
+                  src="../images/excavator.webp"
+                />
+              </div>
+              <!-- 2 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center py-10"
+              >
+                <img
+                  class="bg-white w-[50%] h-[500px] mx-auto"
+                  src="../images/Excavator/excavator1.jpg"
+                />
+              </div>
+              <!-- 3 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center py-10"
+              >
+                <img
+                  class="bg-white w-[50%] h-[500px] mx-auto"
+                  src="../images/Excavator/excavator2.jpg"
+                />
+              </div>
+              <!-- 4 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center py-10"
+              >
+                <img
+                  class="bg-white w-[50%] h-[500px] mx-auto"
+                  src="../images/Excavator/excavator3.jpg"
+                />
+              </div>
+              <!-- 5 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center py-10"
+              >
+                <img
+                  class="bg-white w-[50%] h-[500px] mx-auto"
+                  src="../images/Excavator/excavator4.jpg"
+                />
+              </div>
+              <!-- 6 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center py-10"
+              >
+                <img
+                  class="bg-white w-[50%] h-[500px] mx-auto"
+                  src="../images/Excavator/excavator5.jpg"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper flex gap-5">
+              <!-- 1 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center"
+              >
+                <img
+                  class="bg-[#ececec71] w-full h-[250px] mx-auto"
+                  src="../images/excavator.webp"
+                />
+              </div>
+              <!-- 2 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center"
+              >
+                <img
+                  class="bg-[#ececec71] w-full h-[250px] mx-auto"
+                  src="../images/Excavator/excavator1.jpg"
+                />
+              </div>
+              <!-- 3 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center"
+              >
+                <img
+                  class="bg-[#ececec71] w-full h-[250px] mx-auto"
+                  src="../images/Excavator/excavator2.jpg"
+                />
+              </div>
+              <!-- 4 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center"
+              >
+                <img
+                  class="bg-[#ececec71] w-full h-[250px] mx-auto"
+                  src="../images/Excavator/excavator3.jpg"
+                />
+              </div>
+              <!-- 5 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center"
+              >
+                <img
+                  class="bg-[#ececec71] w-full h-[250px] mx-auto"
+                  src="../images/Excavator/excavator4.jpg"
+                />
+              </div>
+              <!-- 6 -->
+              <div
+                class="w-full h-fit swiper-slide flex justify-center items-center"
+              >
+                <img
+                  class="bg-[#ececec71] w-full h-[250px] mx-auto"
+                  src="../images/Excavator/excavator5.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------ end slider ------------------------ -->
 
       <!----------------------------------- logos -------------------->
       <section class="w-full h-fit bg-orangeFv py-24 mt-20">
@@ -174,42 +300,39 @@
         >
           <img
             class="w-44 h-16 md:w-[28%] md:h-fit lg:w-[10%] brightness-0"
-            src="src/images/Volvo.png"
+            src="../images/Volvo.png"
             alt=""
           />
           <img
             class="w-44 h-16 md:w-[28%] md:h-fit lg:w-[10%] brightness-0"
-            src="src/images/kawasaki.png"
+            src="../images/kawasaki.png"
             alt=""
           />
           <img
             class="w-44 h-16 md:w-[28%] md:h-fit lg:w-[10%] brightness-0"
-            src="src/images/komatsu.png"
+            src="../images/komatsu.png"
             alt=""
           />
           <img
             class="w-44 h-16 md:w-[28%] md:h-fit lg:w-[10%] brightness-0"
-            src="src/images/hyundai.png"
+            src="../images/hyundai.png"
             alt=""
           />
           <img
             class="w-44 h-16 md:w-[28%] md:h-fit lg:w-[10%] brightness-0"
-            src="src/images/Cummins.png"
+            src="../images/Cummins.png"
             alt=""
           />
           <img
             class="w-44 h-16 md:w-[28%] md:h-fit lg:w-[10%] brightness-0"
-            src="src/images/Caterpillar.png"
+            src="../images/Caterpillar.png"
             alt=""
           />
         </div>
       </section>
       <!----------------------------------- end logos ------------------->
-
-
-
     </main>
-    <footer class="mt-10 w-full relative">
+    <footer class="w-full relative">
       <!------------------------------------ background -------------------->
       <div
         class="w-full h-full bg-bottom bg-cover absolute top-0 left-0 bg-[url(../images/footerBg.webp)]"
@@ -223,7 +346,7 @@
         <div
           class="w-full h-fit flex flex-col lg:flex-row gap-0 lg:items-center lg:gap-20 pb-7 border-b border-b-[#d3d3d3bd]"
         >
-          <img class="w-28" src="src/icons/logo.png" alt="" />
+          <img class="w-28" src="../icons/logo.png" alt="" />
           <h2 class="text-white text-[54px] sm:w-[50%] lg:w-full">
             بورس قطعات ماشین آلات راهسازی و معدنی
           </h2>
@@ -249,7 +372,7 @@
               >
                 <img
                   class="w-[60%] h-[60%]"
-                  src="src/icons/instagram.png"
+                  src="../icons/instagram.png"
                   alt=""
                 />
               </div>
@@ -259,7 +382,7 @@
               >
                 <img
                   class="w-[60%] h-[60%]"
-                  src="src/icons/whatsapp.png"
+                  src="../icons/whatsapp.png"
                   alt=""
                 />
               </div>
@@ -269,7 +392,7 @@
               >
                 <img
                   class="w-[60%] h-[60%]"
-                  src="src/icons/facebook.png"
+                  src="../icons/facebook.png"
                   alt=""
                 />
               </div>
@@ -333,7 +456,7 @@
               <li>
                 <a href="">
                   <div class="flex gap-5 items-center">
-                    <img class="w-4 h-4" src="src/icons/location.png" alt="" />
+                    <img class="w-4 h-4" src="../icons/location.png" alt="" />
                     <span class="text-[#fbfbfb] text-hover-orangeFv"
                       >اشرفی اصفهانی بالاتر از پونک بلوار کمالی پلاک 19</span
                     >
@@ -344,7 +467,7 @@
               <li>
                 <a href="">
                   <div class="flex gap-5 items-center">
-                    <img class="w-4 h-4" src="src/icons/phone.png" alt="" />
+                    <img class="w-4 h-4" src="../icons/phone.png" alt="" />
                     <span dir="ltr" class="text-[#fbfbfb] text-hover-orangeFv"
                       >+937 244 04 69</span
                     >
@@ -355,7 +478,7 @@
               <li>
                 <a href="">
                   <div class="flex gap-5 items-center">
-                    <img class="w-4 h-4" src="src/icons/email.png" alt="" />
+                    <img class="w-4 h-4" src="../icons/email.png" alt="" />
                     <span dir="ltr" class="text-[#fbfbfb] text-hover-orangeFv"
                       >parsa@gmail.com</span
                     >
@@ -378,5 +501,6 @@
       </div>
     </footer>
   </body>
+  <script src="../../src/../node_modules/swiper/swiper-bundle.min.js"></script>
   <script src="../js/index.js"></script>
 </html>
