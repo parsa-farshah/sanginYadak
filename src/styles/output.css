@@ -284,6 +284,9 @@
   .mt-44 {
     margin-top: calc(var(--spacing) * 44);
   }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
   .mr-\[10\%\] {
     margin-right: 10%;
   }
@@ -292,6 +295,9 @@
   }
   .mb-9 {
     margin-bottom: calc(var(--spacing) * 9);
+  }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
   }
   .ml-3 {
     margin-left: calc(var(--spacing) * 3);
@@ -951,6 +957,27 @@
       }
     }
   }
+  .hover\:text-\[\#ef8d2a\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #ef8d2a;
+      }
+    }
+  }
+  .hover\:text-\[\#f05800\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #f05800;
+      }
+    }
+  }
+  .hover\:text-\[\#f07800\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #f07800;
+      }
+    }
+  }
   .hover\:shadow-lg {
     &:hover {
       @media (hover: hover) {
@@ -1043,6 +1070,11 @@
   .md\:w-\[32\%\] {
     @media (width >= 48rem) {
       width: 32%;
+    }
+  }
+  .md\:w-\[35\%\] {
+    @media (width >= 48rem) {
+      width: 35%;
     }
   }
   .md\:w-\[40\%\] {
