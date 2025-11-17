@@ -310,12 +310,13 @@
                 >اطلاعات بیشتر</a
               >
             </div>
+
             <!-- loader -->
             <div
               class="w-full lg:w-[48%] h-fit lg:h-[420px] flex flex-wrap bg-[#f7f7f7] px-8 hover:shadow-lg duration-300 py-6 hover:scale-105"
             >
               <!-- image and text -->
-              <div class="flex flex-wrap gap-y-6 items-center mb-5 pt-6">
+              <div class="flex flex-wrap gap-y-6 items-center mb-5">
                 <figure class="w-full">
                   <img class="w-[50%]" src="src/images/loader.png" alt="" />
                 </figure>
@@ -739,10 +740,10 @@
         >
           <!-- ------------------- right ------------- -->
 
-          <figure class="w-full lg:w-[48%] sm:w-[50%] mx-auto lg:h-[600px]">
+          <figure class="w-full lg:w-[48%] mx-auto lg:h-[600px]">
             <img
-              class="w-full h-[370px] lg:h-full object-contain"
-              src="src/images/bucketTeeth4.png"
+              class="w-full h-[370px] lg:h-full object-cover"
+              src="src/images/teethBg.png"
               alt=""
             />
           </figure>
@@ -753,7 +754,7 @@
             <div class="flex gap-5 items-center">
               <div class="w-5 h-0.5 bg-black"></div>
               <span class="text-3xl md:text-4xl text-[#fbfbfb] text-orangeFv"
-                >پرسش‌های پرتکرار</span
+                >ناخن های بیل مکانیکی</span
               >
             </div>
             <!-- h2 -->
@@ -771,6 +772,7 @@
               <!-- first -->
               <div>
                 <div
+                  data-status="off"
                   onclick="clickAccor(this)"
                   class="w-full border-orangeFv px-4 flex justify-between items-center p-4 cursor-pointer duration-300"
                 >
@@ -793,6 +795,7 @@
               <!-- second -->
               <div>
                 <div
+                  data-status="off"
                   onclick="clickAccor(this)"
                   class="w-full border-orangeFv px-4 flex justify-between items-center p-4 cursor-pointer"
                 >
@@ -811,6 +814,7 @@
               <!-- third -->
               <div>
                 <div
+                  data-status="off"
                   onclick="clickAccor(this)"
                   class="w-full border-orangeFv px-4 flex justify-between items-center p-4 cursor-pointer"
                 >
@@ -829,6 +833,7 @@
               <!-- forth -->
               <div>
                 <div
+                  data-status="off"
                   onclick="clickAccor(this)"
                   class="w-full border-orangeFv px-4 flex justify-between items-center p-4 cursor-pointer"
                 >
@@ -1025,5 +1030,6 @@
       </div>
     </footer>
   </body>
+  <script src="src/swiper/swiper-bundle.min.js"></script>
   <script src="src/js/index.js"></script>
 </html>

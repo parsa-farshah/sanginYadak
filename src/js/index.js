@@ -35,6 +35,8 @@ let $accordionSpan = document.querySelectorAll(
 let $accordionImg = document.querySelectorAll("#accordionWrapper>div>div>img");
 
 function clickAccor(s) {
+  console.log(s);
+
   // reseting
   $accordionP.forEach((val) => {
     val.classList.remove("visible");
