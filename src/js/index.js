@@ -114,3 +114,6 @@ var swiper3 = new Swiper(".mySwiper3", {
     clickable: true,
   },
 });
+
+// aos
+AOS.init();
