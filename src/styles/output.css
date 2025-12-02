@@ -254,6 +254,9 @@
   .z-20 {
     z-index: 20;
   }
+  .z-40 {
+    z-index: 40;
+  }
   .z-50 {
     z-index: 50;
   }
@@ -598,6 +601,12 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  .overflow-y-hidden {
+    overflow-y: hidden;
   }
   .rounded-sm {
     border-radius: var(--radius-sm);
@@ -1196,6 +1205,11 @@
   .md\:gap-y-7 {
     @media (width >= 48rem) {
       row-gap: calc(var(--spacing) * 7);
+    }
+  }
+  .md\:overflow-auto {
+    @media (width >= 48rem) {
+      overflow: auto;
     }
   }
   .md\:px-9 {
