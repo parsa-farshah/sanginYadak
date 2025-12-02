@@ -128,7 +128,7 @@
                 width="15"
                 height="15"
                 viewBox="0 0 40 40"
-                class="hover:rotate-180 duration-300"
+                class="group-hover:rotate-180 duration-300"
               >
                 <path
                   fill="#fff"
@@ -241,8 +241,65 @@
         <li class="text-hover-orangeFv duration-300">
           <a href="#aboutUs">درباره ما</a>
         </li>
-        <li class="text-hover-orangeFv duration-300">
-          <a href="#products">تجهیزات</a>
+        <li
+          class="duration-300 relative flex flex-wrap justify-between items-center group productsBtn"
+        >
+          <a class="text-hover-orangeFv w-full flex justify-between"
+            >تجهیزات
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 40 40"
+              class="duration-300 rotate-0"
+            >
+              <path
+                fill="#fff"
+                d="M4.659 11.833h30.682L20 32.167z"
+                class="group-hover:fill-[#ef8d2a]"
+              /></svg
+          ></a>
+
+          <!-- pages -->
+          <ul
+            class="relative hidden z-50 top-[101%] right-0 bg-[#141414] w-full mt-5"
+          >
+            <li>
+              <a
+                href="../pages/excavator.html"
+                class="text-hover-orangeFv w-full h-full flex pr-7 py-2"
+                >بیل مکانیکی</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/bulldozer.html"
+                class="text-hover-orangeFv w-full h-full flex pr-7 py-2"
+                >بلدوزر</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/loader.html"
+                class="text-hover-orangeFv w-full h-full flex pr-7 py-2"
+                >لودر</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/grader.html"
+                class="text-hover-orangeFv text-orangeFv w-full h-full flex pr-7 py-2"
+                >گریدر</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/bucketTeeth.html"
+                class="text-hover-orangeFv w-full h-full flex pr-7 py-2"
+                >ناخن</a
+              >
+            </li>
+          </ul>
         </li>
         <li class="text-hover-orangeFv duration-300">
           <a href="#aboutUs">تماس</a>

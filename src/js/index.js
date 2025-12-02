@@ -3,6 +3,8 @@ let $navMob = document.querySelector("#navMob");
 let $navBtn = document.querySelector("#navBtn");
 let $closeMenuBtn = document.querySelector("#closeMenuBtn");
 
+
+
 ////////////////////////////////////// bar click
 $navBtn.addEventListener("click", () => {
   // bg mobile menu
@@ -115,5 +117,17 @@ var swiper3 = new Swiper(".mySwiper3", {
   },
 });
 
-// aos
-AOS.init();
+//////////////////////////////////////////// prodocts btn in mobile menu
+let $productsBtn = document.querySelectorAll(".productsBtn");
+
+$productsBtn.forEach((val) => {
+  val.addEventListener("click", () => {
+    console.log(val);
+
+    val.childNodes[1].childNodes[1].classList.toggle("rotate-0");
+    val.childNodes[1].childNodes[1].classList.toggle("rotate-180");
+
+    val.childNodes[5].classList.toggle("hidden");
+    val.childNodes[5].classList.toggle("block");
+  });
+});
