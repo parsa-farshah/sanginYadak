@@ -32,9 +32,11 @@
   <body>
     <!------------------ address and socials ------------------->
     <div
-      class="w-full h-[60px] px-9 border-black md:flex items-center justify-between hidden"
+      class="w-full h-[60px] px-5 lg:px-9 border-black md:flex items-center justify-between hidden"
     >
-      <div class="w-full flex justify-between 2xl:container mx-auto">
+      <div
+        class="w-full flex justify-between items-center 2xl:container mx-auto"
+      >
         <!--------------------- left side phone location ------------------->
         <div class="flex h-full items-center gap-7">
           <!-- address -->
@@ -48,7 +50,12 @@
           <!-- phone -->
           <div class="flex items-center gap-3">
             <img class="w-5 h-5" src="../icons/phone.png" alt="" />
-            <p dir="ltr" class="text-[#787878]">09120556620</p>
+            <p dir="ltr" class="text-[#787878] text-xs lg:text-[16px]">
+              09120556620
+            </p>
+            <p dir="ltr" class="text-[#787878] text-xs lg:text-[16px]">
+              021-66639541
+            </p>
           </div>
         </div>
         <!------------------------------------ right side --------------------->
@@ -111,8 +118,64 @@
           <li class="text-hover-orangeFv duration-300">
             <a href="#aboutUs">درباره ما</a>
           </li>
-          <li class="text-orangeFv duration-300">
-            <a href="#products">تجهیزات</a>
+          <li class="duration-300 relative group">
+            <a
+              class="flex gap-4 items-center group-hover:text-[#ef8d2a]"
+              href="#product"
+              >تجهیزات
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 40 40"
+                class="hover:rotate-180 duration-300"
+              >
+                <path
+                  fill="#fff"
+                  d="M4.659 11.833h30.682L20 32.167z"
+                  class="group-hover:fill-[#ef8d2a]"
+                /></svg
+            ></a>
+            <!-- pages -->
+            <ul
+              class="absolute hidden z-50 top-[101%] bg-[#141414] w-[150px] group-hover:block"
+            >
+              <li>
+                <a
+                  href="../pages/excavator.html"
+                  class="text-hover-orangeFv w-full h-full flex pr-4 py-2"
+                  >بیل مکانیکی</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/bulldozer.html"
+                  class="text-hover-orangeFv w-full h-full flex pr-4 py-2"
+                  >بلدوزر</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/loader.html"
+                  class="text-hover-orangeFv w-full h-full flex pr-4 py-2"
+                  >لودر</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/grader.html"
+                  class="text-hover-orangeFv w-full h-full flex pr-4 py-2"
+                  >گریدر</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/bucketTeeth.html"
+                  class="text-hover-orangeFv w-full h-full flex pr-4 py-2"
+                  >ناخن</a
+                >
+              </li>
+            </ul>
           </li>
           <li class="text-hover-orangeFv duration-300">
             <a href="#aboutUs">تماس</a>
@@ -208,7 +271,7 @@
                 class="w-full h-fit swiper-slide flex justify-center items-center py-10"
               >
                 <img
-                  class="bg-white w-[90%] h-[300px] md:w-[50%] md:h-[500px] mx-auto"
+                  class="bg-white w-[90%] h-[300px] md:w-[50%] md:h-[500px] mx-auto object-contain"
                   src="../images/teethBg.png"
                 />
               </div>
@@ -217,7 +280,7 @@
                 class="w-full h-fit swiper-slide flex justify-center items-center py-10"
               >
                 <img
-                  class="bg-whitew-[90%] h-[300px] md:w-[50%] md:h-[500px] mx-auto"
+                  class="bg-whitew-[90%] h-[300px] md:w-[50%] md:h-[500px] mx-auto object-contain"
                   src="../images/Excavator/exTeeth1.png"
                 />
               </div>
@@ -226,7 +289,7 @@
                 class="w-full h-fit swiper-slide flex justify-center items-center py-10"
               >
                 <img
-                  class="bg-white w-[90%] h-[300px] md:w-[50%] md:h-[500px] mx-auto"
+                  class="bg-white w-[90%] h-[300px] md:w-[50%] md:h-[500px] mx-auto object-contain"
                   src="../images/Excavator/exTeeth2.png"
                 />
               </div>
@@ -235,7 +298,7 @@
                 class="w-full h-fit swiper-slide flex justify-center items-center py-10"
               >
                 <img
-                  class="bg-white w-[80%] h-[300px] md:w-[50%] md:h-[500px] mx-auto"
+                  class="bg-white w-[80%] h-[300px] md:w-[50%] md:h-[500px] mx-auto object-contain"
                   src="../images/Excavator/exTeeth3.png"
                 />
               </div>
@@ -244,7 +307,7 @@
                 class="w-full h-fit swiper-slide flex justify-center items-center py-10"
               >
                 <img
-                  class="bg-white w-[90%] h-[300px] md:w-[50%] md:h-[500px] mx-auto"
+                  class="bg-white w-[90%] h-[300px] md:w-[50%] md:h-[500px] mx-auto object-contain"
                   src="../images/Excavator/exTeeth4.png"
                 />
               </div>
@@ -260,7 +323,7 @@
                 class="w-full bg-[#ececec71] h-fit swiper-slide flex justify-center items-center"
               >
                 <img
-                  class="w-full h-[100px] p-2 md:h-[250px] mx-auto"
+                  class="w-full h-[100px] p-2 md:h-[250px] mx-auto object-contain"
                   src="../images/teethBg.png"
                 />
               </div>
@@ -269,7 +332,7 @@
                 class="w-full h-fit bg-[#ececec71] swiper-slide flex justify-center items-center"
               >
                 <img
-                  class="w-full h-[100px] p-2 md:h-[250px] mx-auto"
+                  class="w-full h-[100px] p-2 md:h-[250px] mx-auto object-contain"
                   src="../images/Excavator/exTeeth1.png"
                 />
               </div>
@@ -278,7 +341,7 @@
                 class="w-full bg-[#ececec71] h-fit swiper-slide flex justify-center items-center"
               >
                 <img
-                  class="w-full h-[100px] p-2 md:h-[250px] mx-auto"
+                  class="w-full h-[100px] p-2 md:h-[250px] mx-auto object-contain"
                   src="../images/Excavator/exTeeth2.png"
                 />
               </div>
@@ -287,7 +350,7 @@
                 class="w-full bg-[#ececec71] h-fit swiper-slide flex justify-center items-center"
               >
                 <img
-                  class="w-[95%] h-[100px] p-2 md:h-[250px] mx-auto"
+                  class="w-[95%] h-[100px] p-2 md:h-[250px] mx-auto object-contain"
                   src="../images/Excavator/exTeeth3.png"
                 />
               </div>
@@ -296,7 +359,7 @@
                 class="w-full h-fit swiper-slide flex justify-center items-center"
               >
                 <img
-                  class="bg-[#ececec71] w-full h-[100px] p-2 md:h-[250px] mx-auto"
+                  class="bg-[#ececec71] w-full h-[100px] p-2 md:h-[250px] mx-auto object-contain"
                   src="../images/Excavator/exTeeth4.png"
                 />
               </div>
@@ -506,6 +569,17 @@
                     <img class="w-4 h-4" src="../icons/phone.png" alt="" />
                     <span dir="ltr" class="text-[#fbfbfb] text-hover-orangeFv"
                       >09192149929</span
+                    >
+                  </div>
+                </a>
+              </li>
+              <!-- phone 3 -->
+              <li>
+                <a href="">
+                  <div class="flex gap-5 items-center">
+                    <img class="w-4 h-4" src="src/icons/phone.png" alt="" />
+                    <span dir="ltr" class="text-[#fbfbfb] text-hover-orangeFv"
+                      >021-66639541</span
                     >
                   </div>
                 </a>
