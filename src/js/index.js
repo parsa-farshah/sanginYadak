@@ -3,8 +3,6 @@ let $navMob = document.querySelector("#navMob");
 let $navBtn = document.querySelector("#navBtn");
 let $closeMenuBtn = document.querySelector("#closeMenuBtn");
 
-
-
 ////////////////////////////////////// bar click
 $navBtn.addEventListener("click", () => {
   // bg mobile menu
@@ -129,5 +127,34 @@ $productsBtn.forEach((val) => {
 
     val.childNodes[5].classList.toggle("hidden");
     val.childNodes[5].classList.toggle("block");
+  });
+});
+
+// contactUs
+
+let $contactUs = document.querySelectorAll(".contactUs");
+let $aboutUs = document.querySelectorAll(".aboutUs");
+
+$contactUs.forEach((val) => {
+  val.addEventListener("click", () => {
+    // bg mobile menu
+    $navMobBg.classList.remove("left-0");
+    $navMobBg.classList.add("left-[130%]");
+
+    // mobile menu
+    $navMob.classList.remove("left-[30%]");
+    $navMob.classList.add("left-[150%]");
+  });
+});
+
+$aboutUs.forEach((val) => {
+  val.addEventListener("click", () => {
+    // bg mobile menu
+    $navMobBg.classList.remove("left-0");
+    $navMobBg.classList.add("left-[130%]");
+
+    // mobile menu
+    $navMob.classList.remove("left-[30%]");
+    $navMob.classList.add("left-[150%]");
   });
 });
